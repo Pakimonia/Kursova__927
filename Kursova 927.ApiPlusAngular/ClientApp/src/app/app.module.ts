@@ -13,10 +13,16 @@ import { NotifierModule } from 'angular-notifier';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { AdminPanelComponent } from './admin-panel/admin-panel.component';
 import { ManagerPanelComponent } from './manager-panel/manager-panel.component';
+import { AddAdminComponent } from './add-admin/add-admin.component';
+import { AddManagerComponent } from './add-manager/add-manager.component';
+import { AddProductComponent } from './add-product/add-product.component';
+import { AddTypeClassComponent } from './add-type-class/add-type-class.component';
+import { AddClassProductComponent } from './add-class-product/add-class-product.component';
+import { ManageProductsComponent } from './manage-products/manage-products.component';
 
 
 @NgModule({
-  declarations: [			
+  declarations: [								
     AppComponent,
     NavMenuComponent,
     HomeComponent,
@@ -24,7 +30,13 @@ import { ManagerPanelComponent } from './manager-panel/manager-panel.component';
     RegisterComponent,
     UserProfileComponent,
     AdminPanelComponent,
-    ManagerPanelComponent
+      AddAdminComponent,
+      AddManagerComponent,
+      AddTypeClassComponent,
+      AddClassProductComponent,
+    ManagerPanelComponent,
+      ManageProductsComponent,
+      AddProductComponent,
    ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

@@ -7,9 +7,12 @@ using System.Threading.Tasks;
 
 namespace Kursova_927.DataAccess.Entitty
 {
-    class ProductCharacter
+    class Cllass
     {
-        public int CharacterId { get; set; }
-        public int ProductId { get; set; }
+        public string Id { get; set; }
+        [Required(ErrorMessage = "Class name is required field")]
+        public string Name { get; set; }
+
+
     }
 }

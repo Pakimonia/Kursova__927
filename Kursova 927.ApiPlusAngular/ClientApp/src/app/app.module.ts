@@ -19,10 +19,11 @@ import { AddProductComponent } from './add-product/add-product.component';
 import { AddTypeClassComponent } from './add-type-class/add-type-class.component';
 import { AddClassProductComponent } from './add-class-product/add-class-product.component';
 import { ManageProductsComponent } from './manage-products/manage-products.component';
+import { TestComponent } from './test/test.component';
 
 
 @NgModule({
-  declarations: [								
+  declarations: [									
     AppComponent,
     NavMenuComponent,
     HomeComponent,
@@ -37,6 +38,7 @@ import { ManageProductsComponent } from './manage-products/manage-products.compo
     ManagerPanelComponent,
       ManageProductsComponent,
       AddProductComponent,
+      TestComponent
    ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

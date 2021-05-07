@@ -15,6 +15,7 @@ import { UserGuard } from './Guards/user.guard';
 import { HomeComponent } from './home/home.component';
 import { ManageProductsComponent } from './manage-products/manage-products.component';
 import { ManagerPanelComponent } from './manager-panel/manager-panel.component';
+import { TestComponent } from './test/test.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 
 const routes: Routes = [
@@ -31,6 +32,7 @@ const routes: Routes = [
         { path:'manage-products', component:ManageProductsComponent,canActivate:[ManagerGuard], pathMatch:'full'},
         { path:'add-product', component:AddProductComponent,canActivate:[ManagerGuard], pathMatch:'full'},
     { path:'user-profile', component:UserProfileComponent,canActivate:[UserGuard], pathMatch:'full'},
+    { path:'test', component: TestComponent, pathMatch:'full'},
 ];
 
 @NgModule({ 

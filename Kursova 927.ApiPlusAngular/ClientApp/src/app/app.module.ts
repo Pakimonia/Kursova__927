@@ -20,15 +20,20 @@ import { AddTypeClassComponent } from './add-type-class/add-type-class.component
 import { AddClassProductComponent } from './add-class-product/add-class-product.component';
 import { ManageProductsComponent } from './manage-products/manage-products.component';
 import { TestComponent } from './test/test.component';
+import { Error_404Component } from './error_404/error_404.component';
+import { TypeMenuComponent } from './type-menu/type-menu.component';
 
 
 @NgModule({
-  declarations: [									
+  declarations: [													
     AppComponent,
     NavMenuComponent,
     HomeComponent,
     LoginComponent,
     RegisterComponent,
+    TestComponent,
+    Error_404Component,
+    TypeMenuComponent,
     UserProfileComponent,
     AdminPanelComponent,
       AddAdminComponent,
@@ -38,7 +43,6 @@ import { TestComponent } from './test/test.component';
     ManagerPanelComponent,
       ManageProductsComponent,
       AddProductComponent,
-      TestComponent
    ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

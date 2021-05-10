@@ -8,6 +8,7 @@ import { AddTypeClassComponent } from './add-type-class/add-type-class.component
 import { AdminPanelComponent } from './admin-panel/admin-panel.component';
 import { LoginComponent } from './Auth/Login/Login.component';
 import { RegisterComponent } from './Auth/Register/Register.component';
+import { Error_404Component } from './error_404/error_404.component';
 import { AdminGuard } from './Guards/admin.guard';
 import { ManagerGuard } from './Guards/manager.guard';
 import { NotLoginGuard } from './Guards/notLogin.guard';
@@ -33,6 +34,7 @@ const routes: Routes = [
         { path:'add-product', component:AddProductComponent,canActivate:[ManagerGuard], pathMatch:'full'},
     { path:'user-profile', component:UserProfileComponent,canActivate:[UserGuard], pathMatch:'full'},
     { path:'test', component: TestComponent, pathMatch:'full'},
+    { path:'**', component: Error_404Component},
 ];
 
 @NgModule({ 

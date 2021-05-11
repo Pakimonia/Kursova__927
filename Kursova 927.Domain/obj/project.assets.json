@@ -378,6 +378,9 @@
       "Kursova 927.DTO/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Kursova 927.DataAccess": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Kursova 927.DTO.dll": {}
         },

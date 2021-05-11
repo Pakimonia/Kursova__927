@@ -1,14 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Kursova_927.DataAccess.Entitty
 {
-    class Product
+    [Table("tblProduct")]
+    public class Product
     {
+        [Key]
         public string Id { get; set; }
         [Required(ErrorMessage = "Name is required field")]
         public string Name { get; set; }

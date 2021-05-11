@@ -166,7 +166,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\gnatyukDima\\Desktop\\Kursova_927-master\\Kursova 927.DataAccess\\Kursova 927.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\gnatyukDima\\Desktop\\Kursova_927-master\\Kursova 927.DataAccess\\Kursova 927.DataAccess.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

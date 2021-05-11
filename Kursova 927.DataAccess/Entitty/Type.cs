@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace Kursova_927.DataAccess.Entitty
 {
     [Table("tblType")]
-    class Type
+    public class Type
     {
         public string Id { get; set; }
         [Required(ErrorMessage = "Type name is required field")]

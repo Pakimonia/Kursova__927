@@ -5,4 +5,8 @@
     <RootNamespace>Kursova_927.DTO</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Kursova 927.DataAccess\Kursova 927.DataAccess.csproj" />
+  </ItemGroup>
+
 </Project>

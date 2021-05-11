@@ -11,9 +11,9 @@ namespace Kursova_927.DataAccess.EF
 {
     public class EFContext : IdentityDbContext<User>
     {
-        public EFContext(DbContextOptions<EFContext> options): base(options)
-        {
-      
-        }
+        public EFContext(DbContextOptions<EFContext> options) : base(options) { }
+
+        public DbSet<Product> Products { get; set; }
+
     }
 }

@@ -41,7 +41,7 @@ export class LoginComponent implements OnInit {
           }
           else if(this.token_data.roles == "Manager"){
             
-            this.router.navigate(['/manager-profile'])
+            this.router.navigate(['/manager-panel'])
           }
           else if(this.token_data.roles == "User"){
             

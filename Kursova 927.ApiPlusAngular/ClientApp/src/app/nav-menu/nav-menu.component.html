@@ -1,12 +1,12 @@
-<header class="header-menu">
-  <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-none  box-shadow mb-3">
-    <div class="container">
+<header class="header-menu ">
+  <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-none  box-shadow mb-3 ">
+    <div class="container ">
       <a class="navbar-brand" [routerLink]="['/']">ApiPlusAngular</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
         aria-label="Toggle navigation" [attr.aria-expanded]="isExpanded" (click)="toggle()">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end" [ngClass]="{ show: isExpanded }">
+      <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end " [ngClass]="{ show: isExpanded }">
         <ul class="navbar-nav flex-grow">
           <li class="nav-item header-menu" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
             <a class="nav-link text-dark menu-link" [routerLink]="['/']">Home</a>
@@ -16,6 +16,14 @@
             <a class="nav-link text-dark" [routerLink]="['/admin-panel']">Admin panel</a>
           </li>
           
+          <li *ngIf="isManager===true" class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/manage-products']">Products</a>
+          </li>
+
+
+
+
+
           <li *ngIf="isManager===true" class="nav-item" [routerLinkActive]="['link-active']">
             <a class="nav-link text-dark" [routerLink]="['/manager-panel']">Manager panel</a>
           </li>
@@ -28,11 +36,11 @@
             <a class="nav-link text-dark" [routerLink]="['/register']">Register</a>
           </li>
           <li *ngIf="isLogined===false" class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/login']">Login</a>
+            <a class="nav-link text-dark " [routerLink]="['/login']">Login</a>
           </li>
 
           <li *ngIf="isLogined===true" class="nav-item">
-            <a class="nav-link text-dark logout" (click)="Logout()" >Logout</a>
+            <a class="nav-link text-dark logout " (click)="Logout()" >Logout</a>
           </li>
         </ul>
       </div>

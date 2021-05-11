@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Kursova_927.DTO
 {
-    class ProductClassDTO
+    public class ProductClassDTO
     {
         public string Id { get; set; }
         public string Name { get; set; }

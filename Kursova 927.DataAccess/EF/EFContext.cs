@@ -13,7 +13,7 @@ namespace Kursova_927.DataAccess.EF
     {
         public EFContext(DbContextOptions<EFContext> options) : base(options) { }
 
-        public DbSet<Product> Products { get; set; }
+        public DbSet<Product> Productss { get; set; }
 
     }
 }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Kursova_927.DataAccess.Entitty
 {
-    [Table("tblType")]
+    //[Table("tblType")]
     public class Type
     {
         public string Id { get; set; }

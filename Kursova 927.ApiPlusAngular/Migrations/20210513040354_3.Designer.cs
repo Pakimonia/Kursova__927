@@ -28,7 +28,7 @@ namespace Kursova_927.ApiPlusAngular.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("Count")
+                    b.Property<int>("Countt")
                         .HasColumnType("int");
 
                     b.Property<string>("ImageURL")
@@ -46,7 +46,7 @@ namespace Kursova_927.ApiPlusAngular.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("tblProduct");
+                    b.ToTable("tblProducts");
                 });
 
             modelBuilder.Entity("Kursova_927.DataAccess.Entitty.User", b =>

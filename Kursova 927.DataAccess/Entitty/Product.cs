@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Kursova_927.DataAccess.Entitty
 {
-    [Table("tblProduct")]
+    [Table("tblProducts")]
     public class Product
     {
         [Key]
@@ -18,9 +18,9 @@ namespace Kursova_927.DataAccess.Entitty
         public bool IsAviable { get; set; }
         [Required(ErrorMessage = "Price is required field")]
         public float Price { get; set; }
-        public int Count { get; set; }
+        public int Countt { get; set; }
 
-        public string ImageURL { get; set;}
+        public string ImageURL { get; set; }
         //public List<ProductOptionDTO> VarOptions { get; set; }
         //public List<ProductClassDTO> Classes { get; set; }
         //public List<ProductCharacterDTO> Characters { get; set; }

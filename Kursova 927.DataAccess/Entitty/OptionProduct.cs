@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Kursova_927.DataAccess.Entitty
 {
-    [Table("tblOptionProduct")]
+    //[Table("tblOptionProduct")]
     public class OptionProduct
     {
         public int OptionId { get; set; }

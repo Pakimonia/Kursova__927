@@ -4,6 +4,6 @@ export class Product {
         public name?: string,
         public isAviable?: boolean,
         public price?: number,
-        public count?: number,
+        public countt?: number,
         public image?: string) { }
 }

@@ -7,7 +7,7 @@ namespace Kursova_927.ApiPlusAngular.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "tblProduct",
+                name: "tblProducts",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -15,19 +15,19 @@ namespace Kursova_927.ApiPlusAngular.Migrations
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     IsAviable = table.Column<bool>(type: "bit", nullable: false),
                     Price = table.Column<float>(type: "real", nullable: false),
-                    Count = table.Column<int>(type: "int", nullable: false),
+                    Countt = table.Column<int>(type: "int", nullable: false),
                     ImageURL = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_tblProduct", x => x.Id);
+                    table.PrimaryKey("PK_tblProducts", x => x.Id);
                 });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "tblProduct");
+                name: "tblProducts");
         }
     }
 }

@@ -260,6 +260,9 @@
         }
       },
       "Kursova 927.DTO/1.0.0": {
+        "dependencies": {
+          "Kursova 927.DataAccess": "1.0.0"
+        },
         "runtime": {
           "Kursova 927.DTO.dll": {}
         }

@@ -12,7 +12,7 @@ namespace Kursova_927.DataAccess.Entitty
     public class Product
     {
         [Key]
-        public string Id { get; set; }
+        public int Id { get; set; }
         [Required(ErrorMessage = "Name is required field")]
         public string Name { get; set; }
         public bool IsAviable { get; set; }
@@ -20,7 +20,7 @@ namespace Kursova_927.DataAccess.Entitty
         public float Price { get; set; }
         public int Count { get; set; }
 
-        public List<string> ImagesURL { get; set;}
+        public string ImageURL { get; set;}
         //public List<ProductOptionDTO> VarOptions { get; set; }
         //public List<ProductClassDTO> Classes { get; set; }
         //public List<ProductCharacterDTO> Characters { get; set; }

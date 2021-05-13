@@ -31,12 +31,21 @@ namespace Kursova_927.ApiPlusAngular
 
         public void ConfigureServices(IServiceCollection services)
         {
+
             services.AddCors();
             services.AddDbContext<EFContext>(
                 opt => opt.UseSqlServer(
                     Configuration["connectionString"],
                     b => b.MigrationsAssembly("Kursova 927.ApiPlusAngular")
                 ));
+
+            services.AddControllers();
+
+            services.AddSpaStaticFiles(configuration =>
+            {
+                configuration.RootPath = "ClientApp/dist";
+            });
+
 
             services.AddIdentity<User, IdentityRole>()
                 .AddEntityFrameworkStores<EFContext>()

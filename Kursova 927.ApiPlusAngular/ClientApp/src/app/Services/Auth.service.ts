@@ -5,12 +5,14 @@ import { Observable } from 'rxjs';
 import { ApiResponse } from '../Models/api.response';
 import { LoginModel } from '../Models/login.model';
 import { RegisterModel } from '../Models/register.model';
+import { Product } from '../product';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
+  private url = "/api/products";
   token_data: any; 
   token = localStorage.getItem('token');
   baseUrl = "/api/Account";
@@ -61,5 +63,28 @@ export class AuthService {
     localStorage.removeItem("token");
     this.authEvents.emit(false);
   }
+
+  getProducts() {
+    return this.http.get(this.url);
+  }
+ 
+  getProduct(id: number) {
+      return this.http.get(this.url + '/' + id);
+  }
+ 
+  createProduct(product: Product) {
+      return this.http.post(this.url, product);
+  }
+  updateProduct(product: Product) {
+
+      return this.http.put(this.url, product);
+  }
+  deleteProduct(id: number) {
+      return this.http.delete(this.url + '/' + id);
+  }
+
+
+
+  
 
 }

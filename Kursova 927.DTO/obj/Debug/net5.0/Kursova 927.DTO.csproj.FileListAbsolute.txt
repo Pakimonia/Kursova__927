@@ -34,3 +34,6 @@ C:\Users\gnatyukDima\Desktop\Kursova_927-master\Kursova 927.DTO\obj\Debug\net5.0
 C:\Users\gnatyukDima\Desktop\Kursova_927-master\Kursova 927.DTO\obj\Debug\net5.0\Kursova 927.DTO.dll
 C:\Users\gnatyukDima\Desktop\Kursova_927-master\Kursova 927.DTO\obj\Debug\net5.0\ref\Kursova 927.DTO.dll
 C:\Users\gnatyukDima\Desktop\Kursova_927-master\Kursova 927.DTO\obj\Debug\net5.0\Kursova 927.DTO.pdb
+C:\Users\gnatyukDima\Desktop\Kursova_927-master\Kursova 927.DTO\bin\Debug\net5.0\Kursova 927.DataAccess.dll
+C:\Users\gnatyukDima\Desktop\Kursova_927-master\Kursova 927.DTO\bin\Debug\net5.0\Kursova 927.DataAccess.pdb
+C:\Users\gnatyukDima\Desktop\Kursova_927-master\Kursova 927.DTO\obj\Debug\net5.0\Kursova 927.DTO.csproj.CopyComplete
